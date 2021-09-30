@@ -1,0 +1,23 @@
+#!/bin/bash
+
+m=`date +%m`
+y=`date +%Y`
+
+if [ "$m" = "03" ] || [ "$m" = "04" ] || [ "$m" = "05" ]
+then
+  ncal -Mb3 04 $y
+elif [ "$m" = "06" ] || [ "$m" = "07" ] || [ "$m" = "08" ]
+then
+  ncal -Mb3 07 $y
+elif [ "$m" = "09" ] || [ "$m" = "10" ] || [ "$m" = "11" ]
+then
+  ncal -Mb3 10 $y
+elif [ "$m" = "01" ] || [ "$m" = "02" ]
+then
+  ncal -Mb3 01 $y
+elif [ "$m" = "12"  ]
+then
+  ((y++))
+  ncal -Mb3 01 $y 
+fi
+
