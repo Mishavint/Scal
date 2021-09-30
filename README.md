@@ -1,5 +1,9 @@
 # Scal
-Displays a calendar for season
+Displays the calendar for the season
+
+## Usage
+scal(Season cal) - Displays the calendar for the season
+ccal(Current cal) - Displays the calendar for 3 months
 
 ## example
 <img
